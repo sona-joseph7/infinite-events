@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Planners</title>
+    <!-- CSS LINK -->
+     <link rel="stylesheet" href="./style.css">
+     <!-- GOOGLE FONT -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Griffy&family=Kristi&family=Lakki+Reddy&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Lobster&family=Nerko+One&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Pacifico&family=Playwrite+CU:wght@100..400&family=Qwitcher+Grypen:wght@400;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sevillana&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <h1 class="logo">Infinite Events</h1>
+        <ul class="nav-links">
+            <li class="active"><a href="#">Home</a></li>
+            <li class="active"><a href="#">About US</a></li>
+            <li class="active"><a href="#">Our Services</a></li>
+            <li class="active"><a href="#">Testimonials</a></li>
+            <li class="ctn"><a href="#" id="nav-ctn">Contact</a></li>
+        </ul>
+        <img src="./images/menu-btn.png" alt="" class="menu-btn">
+    </nav>
+    <header>
+        <div class="header-content">
+            <h2>"Crafting Memories That Last a Lifetime"</h2>
+            <div class="line"></div>
+            <h1>"Your Special Day, Perfectly Planned"</h1>
+            <a href="#" class="ctn">Plan Your Event Today</a>
+        </div>
+    </header>
+    <!-- Service Packages -->
+     <section class="services">
+        <div class="title">
+            <h1>Service Packages</h1>
+            <div class="line"></div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <img style="width: 500px;" src="./images/night4.avif" alt="">
+                <h4>Basic Packages</h4>
+                <p> – For small gatherings, covering essentials.</p>
+                    <a href="#" class="ctn">View Details</a>
+            </div>
+            <div class="col">
+                <img style="width: 500px;" src="./images/img2.jpg" alt="">
+                <h4> Premium Package </h4>
+                <p> – For larger events with detailed customization.</p>
+                    <a href="#" class="ctn">View Details</a>
+            </div>
+
+        </div>
+     </section>
+
+     <!-- Celebrate With Us -->
+      <section class="Celebrate">
+        <div class="Celebrate-content">
+            <h1>Celebrate Life’s Special Moments</h1>
+            <div class="line"></div>
+            <p> "From intimate gatherings to grand celebrations, we bring your dreams to life with creativity and precision. Let us take the stress out of planning so you can focus on creating memories."</p>
+            <a href="#" class="ctn">Start Planning Now</a>
+        </div>
+      </section>
+
+      <!-- Featured services -->
+       <section class="featured">
+        <div class="row">
+            <div class="col content-col">
+                <h1>Tailored Services for Every Occasion</h1>
+                <div class="line"></div>
+                <p>Whether you’re planning a bespoke wedding, organizing a corporate event, or celebrating a special birthday or anniversary, we offer personalized services that bring your vision to life. Our expert team handles every detail, ensuring a seamless experience for all types of events, big or small.</p>
+                <a href="#" class="ctn">Learn More</a>
+            </div>
+            <div class="col image-col">
+                <div class="image-gallery">
+                    <img  src="./images/img1.jpeg" alt="">
+                    <img  src="./images/night5.png" alt="">
+                    <img  src="./images/haldi.jpeg" alt="">
+                    <img  src="./images/night1.jpg" alt="">
+                </div>
+            </div>
+        </div>
+       </section>
+
+       <!-- footer -->
+        <section class="footer">
+            <p><strong>Contact Us:</strong><br>
+                Email: info@infiniteevents.com<br>
+                Phone: +1 (800) 123-4567<br>
+                Address: 123 Event Plaza, City, Country</p>
+            
+
+                <p>&copy; 2024 Infinite Events. All Rights Reserved.</p>
+        </section>
+
+</body>
+<script>
+    const menuBtn = document.querySelector('.menu-btn')
+    const navlinks = document.querySelector('.nav-links')
+
+    menuBtn.addEventListener('click',()=>{
+        navlinks.classList.toggle('mobile-menu')
+    })
+</script>
+</html>

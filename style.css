@@ -1,0 +1,287 @@
+/* global */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+
+.active{
+    color: whitesmoke;
+    text-decoration: underline;
+    font-weight: bold;
+}
+body,html{
+    overflow-x: hidden;
+}
+/* navbar */
+.navbar{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 20px;
+    color: whitesmoke;
+}
+.nav-links a{
+    color: whitesmoke;
+    font-weight: 600;
+}
+#nav-ctn{
+    color: black;
+    padding: 2px 4px;
+}
+.nav-links{
+    display: flex;
+    align-items: center;
+}
+.nav-links li{
+    margin: 0 30px;
+}
+
+header{
+    width: 100vw;
+    height: 100vh;
+    background-image: url(./images/night5.png);
+    background-position: bottom;
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+.header-content{
+    margin-bottom: 150px;
+    background: rgba(0, 0, 0, 0.5); /* Black background with 50% opacity */
+    color: white; /* Light text */
+
+    text-align: center;
+}
+.header-content h2{
+    font-size: 4vmin;
+}
+.line{
+    width: 400px;
+    height: 4px;
+    background-color:gold;
+    margin: 10px auto;
+    border-radius: 5px;
+}
+.header-content h1{
+    font-size: 7vmin;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+.ctn{
+    padding: 15px 15px;
+    background: crimson;
+    border-radius: 30px;
+    color: white;
+    font-weight: 600;
+}
+.menu-btn{
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    width: 40px;
+    cursor: pointer;
+    display: none;
+}
+/* section */
+section{
+    width: 80%;
+    margin: 80px auto;
+}
+.title{
+    text-align: center;
+    font-size: 4vmin;
+    color: crimson;
+}
+.row{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+}
+.row .col{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.services .row {
+    margin-top: 50px;
+}
+h4{
+    font-size: 3vmin;
+    color: blue;
+    margin: 20px auto;
+}
+p{
+    color: rgb(69, 16, 16);
+    padding: 0px 40px;
+}
+.services .ctn{
+    margin-top: 30px;
+}
+/* Celebrate with us */
+.Celebrate{
+    width: 100%;
+    height: 100vh;
+    background-image: url(./images/night2.webp);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+}
+.Celebrate-content{
+    width: 50%;
+    padding: 50px;
+    color: whitesmoke;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.Celebrate-content h1{
+    font-size: 7vmin;
+    margin: 50px;
+}
+.Celebrate-content .line{
+   margin-bottom: 50px;
+}
+.Celebrate-content p{
+    color: bisque;
+}
+.Celebrate-content .ctn{
+    margin-top: 40px;
+}
+.content-col{
+    width: 40%;
+}
+.image-col{
+    width: 60%;
+}
+.featured .image-gallery{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    align-items: center;
+}
+.image-gallery img{
+    max-width: 250px;
+    margin: 10px;
+}
+.content-col h1{
+    font-size: 7vmin;
+    color: crimson;
+}
+.content-col .line{
+    margin-left: -1px;
+}
+.content-col p{
+    padding: 0;
+    margin: 30px auto;
+}
+.content-col .ctn{
+    margin-left: -100px;
+}
+.footer{
+    width: 100%;
+    min-height: 100px;
+    padding: 20px 80px;
+    margin: 0;
+    background: rgb(70, 61, 78);
+    text-align: center;
+}
+.footer p{
+    color: whitesmoke;
+    margin: 20px auto;
+}
+
+
+
+
+
+
+
+
+/* Mobile device */
+@media only screen and (max-width:850px){
+    .menu-btn{
+        display: block;
+    }
+    .navbar{
+        padding: 0;
+    }
+    .logo{
+        position: absolute;
+        top: 30px;
+        left: 30px;
+    }
+    .nav-links{
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+        justify-content: center;
+        background-color: rgb(4, 0, 0);
+        margin-top: -900px;
+        transition:  all 0.5s ease-in-out;
+    }
+    .mobile-menu{
+        margin-top: 0px;
+        border-bottom-right-radius: 40%;
+    }
+    .nav-links li{
+        margin: 30px auto;
+    }
+    /* Service Packages */
+    .row{
+        flex-direction: column;
+    }
+    .row .col{
+        margin: 20px auto;
+    }
+    .col img{
+        max-width: 90%;
+    }
+    .Celebrate-content{
+        width: 100%;
+    }
+    .featured .col{
+        width: 100%;
+    }
+    .image-gallery{
+        justify-content: center;
+        align-items: center;
+    }
+    .image-gallery img{
+        width: 90%;
+    }
+    .footer{
+        padding: 10px;
+    }
+}
+
+
+/* Animations for images and buttons */
+img{
+    transition: transform .3s ease;
+}
+img:hover{
+    transform: scale(1.1);
+}
+.ctn:hover{
+    background: gold;
+    color: black;
+    box-shadow: 4px 4px 6px rgb(15, 12, 13);
+}
+.li:hover{
+    color: crimson;
+    cursor: pointer;
+}
